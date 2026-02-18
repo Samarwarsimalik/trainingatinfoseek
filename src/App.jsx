@@ -1,9 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
 function App() {
   return (
-    <div className='bg-amber-50 text-3xl '>Samar</div>
-  )
+    <>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
