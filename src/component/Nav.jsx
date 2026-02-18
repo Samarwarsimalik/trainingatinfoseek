@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/react.svg";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,8 +9,12 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-yellow-400">
-          SammoDev
+        <Link to="/">
+          <img 
+            src={logo} 
+            alt="Sammo Logo"
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Menu */}
